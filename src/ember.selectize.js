@@ -202,7 +202,7 @@ Ember.Selectize = Ember.View.extend({
     var selection = get(this,'selection');
     var multiple = get(this,'multiple');
     if(content){
-      var obj = content.find(function(item){
+      var obj = selection.find(function(item){
         if(get(item,get(this,'_valuePath')) == value)
           return true;
       },this);
